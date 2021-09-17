@@ -1,0 +1,68 @@
+package com.nagarro.accountmanagementservice.models;
+
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="accountmanagement")
+public class AccountManagement {
+
+	@Id
+	private long id;
+	
+	@Column
+	private String accountNo;
+	
+	@Column
+	private int amount;
+	
+	@Column
+	private String beanchName;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getAccountNo() {
+		return accountNo;
+	}
+
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
+	}
+
+	public int getAmount() {
+		return amount;
+	}
+
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+
+	public String getBeanchName() {
+		return beanchName;
+	}
+
+	public void setBeanchName(String beanchName) {
+		this.beanchName = beanchName;
+	}
+
+	public AccountManagement(long id, String accountNo, int amount, String beanchName) {
+		super();
+		this.id = id;
+		this.accountNo = accountNo;
+		this.amount = amount;
+		this.beanchName = beanchName;
+	}
+
+	public AccountManagement() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+}

@@ -1,0 +1,4 @@
+spring.cloud.config.server.native.searchLocations=file://Users//tushartrivedi//code//config-git-repo
+
+server.port=8888
+

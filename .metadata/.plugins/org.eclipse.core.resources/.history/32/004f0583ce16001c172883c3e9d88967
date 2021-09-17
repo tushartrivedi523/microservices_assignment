@@ -1,0 +1,9 @@
+spring.application.name = customer-management-service
+
+spring.cloud.config.uri=http://localhost:8888
+spring.profiles.active=local
+
+# disable security when connecting to server
+management.security.enabled=false
+# expose actuator endpoints
+management.endpoints.web.exposure.include=*

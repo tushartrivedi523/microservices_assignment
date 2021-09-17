@@ -1,0 +1,9 @@
+
+spring.application.name = api-gateway
+server.port:8081
+eureka.client.serviceUrl.defaultZone  = http://localhost:9091/eureka
+eureka.client.instance.preferIpAddress = true
+
+zuul.routes.customer-management-service.path = /customerMG/**
+zuul.routes.customer-management-service.service-id=customer-management-service
+zuul.routes.customer-management-service.stripPrefix=false

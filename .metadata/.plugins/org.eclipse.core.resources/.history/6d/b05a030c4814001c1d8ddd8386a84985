@@ -1,0 +1,27 @@
+package com.nagarro.accountmanagementservice.models;
+
+public class CustomerCheckData {
+
+	boolean isValid;
+
+	public boolean isValid() {
+		return isValid;
+	}
+
+	public void setValid(boolean isValid) {
+		this.isValid = isValid;
+	}
+
+	public CustomerCheckData() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public CustomerCheckData(boolean isValid) {
+		super();
+		this.isValid = isValid;
+	}
+	
+	
+	
+}

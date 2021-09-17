@@ -1,0 +1,28 @@
+package com.nagarro.accountmanagementservice.models;
+
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="accountmanagement")
+public class AccountManagement {
+
+	@Id
+	private long id;
+	
+	@Column(name="accountNo")
+	private String accountNo;
+	
+	@Column(name="amount")
+	private int amount;
+	
+	@Column(name="branchName")
+	private String branchName;
+	
+	
+
+	
+	
+	
+	
+}

@@ -1,0 +1,25 @@
+
+
+
+eureka:
+    client:
+        instance:
+            preferIpAddress: true
+        serviceUrl:
+            defaultZone: http://localhost:9091/eureka
+server:
+    port: 8081
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: employeeModule
+        uri: http://localhost:8081/
+        predicates:
+        - Path=/employee/**
+      - id: consumerModule
+        uri: http://localhost:8082/
+        predicates:
+        - Path=/consumer/**
+

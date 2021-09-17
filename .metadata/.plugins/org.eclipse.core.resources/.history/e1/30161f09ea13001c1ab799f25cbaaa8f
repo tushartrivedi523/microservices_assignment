@@ -1,0 +1,47 @@
+package com.nagarro.customermanagementservice.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nagarro.customermanagementservice.models.CustomerManagement;
+import com.nagarro.customermanagementservice.repository.CustomerRepo;
+
+@Service
+public class CustomerService {
+
+	@Autowired
+	private CustomerRepo customerRepo;
+	
+	public List<CustomerManagement> getAllCustomer()
+	{
+		return customerRepo.findAll();
+	}
+	
+	public void addNewCustomer(CustomerManagement customerDataToAdd)
+	{
+		customerRepo.save(customerDataToAdd);
+	}
+	
+	public Optional<CustomerManagement> getCustomerById(long id)
+	{
+		return customerRepo.findById(id);
+	}
+	
+	public boolean checkForValidCustomer(long id)
+	{
+		List<CustomerManagement> getAllCustomer = customer 
+	}
+	
+	public void updateDetailsOfCustomer(CustomerManagement customerDataToUpdate)
+	{
+		customerRepo.save(customerDataToUpdate);
+	}
+	
+	
+	
+	
+	
+}

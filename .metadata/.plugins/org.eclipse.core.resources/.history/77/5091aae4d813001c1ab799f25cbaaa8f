@@ -1,0 +1,10 @@
+package com.nagarro.accountmanagementservice.models;
+
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="accountmanagement")
+public class AccountManagement {
+
+}

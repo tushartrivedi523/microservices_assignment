@@ -1,0 +1,29 @@
+package com.nagarro.accountmanagementservice.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nagarro.accountmanagementservice.models.AccountManagement;
+import com.nagarro.accountmanagementservice.repository.AccountRepo;
+
+@Service
+public class AccountService {
+	
+	@Autowired
+	private AccountRepo accountRepo;
+	
+	public Optional<AccountManagement> addMoney(long id, int amountToUpdated)
+	{
+		AccountManagement accountData = accountRepo.findById(id);
+		return accountData;
+	}
+	
+	public List<AccountManagement> getAllAccount()
+	{
+		return accountRepo.findAll();
+	}
+	
+}

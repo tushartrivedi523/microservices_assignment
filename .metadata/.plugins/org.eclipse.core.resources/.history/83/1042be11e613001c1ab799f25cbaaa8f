@@ -1,0 +1,70 @@
+package com.nagarro.accountmanagementservice.models;
+
+
+import javax.persistence.*;
+
+@Entity
+public class AccountManagement {
+
+	@Id
+	private long id;
+	
+	
+	private String accountNo;
+	
+	
+	private int amount;
+	
+	
+	private String branchName;
+	
+	
+
+	public String getBranchName() {
+		return branchName;
+	}
+
+	public void setBranchName(String branchName) {
+		this.branchName = branchName;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getAccountNo() {
+		return accountNo;
+	}
+
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
+	}
+
+	public int getAmount() {
+		return amount;
+	}
+
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+
+
+	public AccountManagement(long id, String accountNo, int amount, String branchName) {
+		super();
+		this.id = id;
+		this.accountNo = accountNo;
+		this.amount = amount;
+		this.branchName = branchName;
+	}
+
+	public AccountManagement() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+}
